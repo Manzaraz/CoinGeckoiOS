@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		61C647872DB069280046B6D8 /* CoinGeckoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C647822DB069280046B6D8 /* CoinGeckoiOSApp.swift */; };
+		61C647882DB069280046B6D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C647832DB069280046B6D8 /* ContentView.swift */; };
+		61C647892DB069280046B6D8 /* Cryptocurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C647842DB069280046B6D8 /* Cryptocurrency.swift */; };
+		61C6478A2DB069280046B6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C647812DB069280046B6D8 /* Assets.xcassets */; };
+		61C6478B2DB069280046B6D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 61C647852DB069280046B6D8 /* README.md */; };
+		61C647902DB06A420046B6D8 /* GetGlobalCryptoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6478F2DB06A420046B6D8 /* GetGlobalCryptoList.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		61C6476F2DB067060046B6D8 /* CoinGeckoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinGeckoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C647812DB069280046B6D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61C647822DB069280046B6D8 /* CoinGeckoiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoiOSApp.swift; sourceTree = "<group>"; };
+		61C647832DB069280046B6D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61C647842DB069280046B6D8 /* Cryptocurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrency.swift; sourceTree = "<group>"; };
+		61C647852DB069280046B6D8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		61C6478F2DB06A420046B6D8 /* GetGlobalCryptoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGlobalCryptoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		61C647712DB067060046B6D8 /* CoinGeckoiOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CoinGeckoiOS;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		61C6476C2DB067060046B6D8 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		61C647662DB067060046B6D8 = {
 			isa = PBXGroup;
 			children = (
-				61C647712DB067060046B6D8 /* CoinGeckoiOS */,
+				61C647862DB069280046B6D8 /* CoinGeckoiOS */,
 				61C647702DB067060046B6D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,43 @@
 				61C6476F2DB067060046B6D8 /* CoinGeckoiOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		61C647862DB069280046B6D8 /* CoinGeckoiOS */ = {
+			isa = PBXGroup;
+			children = (
+				61C6478C2DB0692E0046B6D8 /* Domain */,
+				61C647822DB069280046B6D8 /* CoinGeckoiOSApp.swift */,
+				61C647832DB069280046B6D8 /* ContentView.swift */,
+				61C647812DB069280046B6D8 /* Assets.xcassets */,
+				61C647852DB069280046B6D8 /* README.md */,
+			);
+			path = CoinGeckoiOS;
+			sourceTree = "<group>";
+		};
+		61C6478C2DB0692E0046B6D8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				61C6478E2DB06A1C0046B6D8 /* Use cases */,
+				61C6478D2DB0693E0046B6D8 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		61C6478D2DB0693E0046B6D8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				61C647842DB069280046B6D8 /* Cryptocurrency.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		61C6478E2DB06A1C0046B6D8 /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+				61C6478F2DB06A420046B6D8 /* GetGlobalCryptoList.swift */,
+			);
+			path = "Use cases";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +103,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				61C647712DB067060046B6D8 /* CoinGeckoiOS */,
 			);
 			name = CoinGeckoiOS;
 			packageProductDependencies = (
@@ -109,6 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C6478A2DB069280046B6D8 /* Assets.xcassets in Resources */,
+				61C6478B2DB069280046B6D8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C647872DB069280046B6D8 /* CoinGeckoiOSApp.swift in Sources */,
+				61C647882DB069280046B6D8 /* ContentView.swift in Sources */,
+				61C647902DB06A420046B6D8 /* GetGlobalCryptoList.swift in Sources */,
+				61C647892DB069280046B6D8 /* Cryptocurrency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
