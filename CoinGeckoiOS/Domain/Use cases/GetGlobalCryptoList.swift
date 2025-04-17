@@ -7,23 +7,12 @@
 
 import Foundation
 
-enum CryptocurrencyDomainError: Error {
-    case generic
-}
-
-protocol GlobalCryptoListRepositoryType {
-    func getGlobalCryptoList() async -> Result<[Cryptocurrency], CryptocurrencyDomainError>
-    
-    
-}
-
 class GetGlobalCryptoList {
     private let repository: GlobalCryptoListRepositoryType
     
     init(repository: GlobalCryptoListRepositoryType) {
         self.repository = repository
     }
-    
     
     func execute() async -> Result<[Cryptocurrency], CryptocurrencyDomainError> {
         let result = await repository.getGlobalCryptoList()
